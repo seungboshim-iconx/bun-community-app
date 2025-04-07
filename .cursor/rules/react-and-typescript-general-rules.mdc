@@ -1,9 +1,4 @@
 ---
-description: 
-globs: 
-alwaysApply: true
----
----
 description: React와 TypeScript 프로젝트의 일반적인 모범 사례 및 규칙
 globs: **/*.{ts,tsx,js,jsx}
 alwaysApply: true
@@ -108,3 +103,4 @@ React 및 TypeScript 개발 시 다음 규칙들을 함께 참조하세요:
 - **TypeScript 활용**: [typescript-usage-rule](./typescript-usage-rule.mdc) - TypeScript 타입 시스템 활용
 - **코딩 스타일**: [coding-convention-rule](./coding-convention-rule.mdc) - 일관된 코딩 패턴
 - **네이밍 패턴**: [naming-convention-rule](./naming-convention-rule.mdc) - 컴포넌트 및 함수 네이밍
+

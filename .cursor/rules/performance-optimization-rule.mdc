@@ -1,9 +1,4 @@
 ---
-description: 
-globs: 
-alwaysApply: true
----
----
 description: React와 TypeScript 애플리케이션의 성능 최적화를 위한 규칙
 globs: **/*.{ts,tsx,js,jsx}
 alwaysApply: true

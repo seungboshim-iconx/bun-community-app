@@ -3,11 +3,6 @@ description: API 페칭 아키텍처에 관한 규칙
 globs: **/*.{ts,tsx,js,jsx}
 alwaysApply: true
 ---
----
-description: API 페칭 아키텍처에 관한 규칙
-globs: **/*.{ts,tsx,js,jsx}
-alwaysApply: true
----
 
 # API 페칭 아키텍처 규칙
 
@@ -16,7 +11,7 @@ alwaysApply: true
 - `/src/hooks`: 데이터 페칭 커스텀 훅
 - `/src/types`: 공통 타입 정의
 
-> **참고**: 전체 디렉토리 구조는 [directory-structure-rule](./directory-structure-rule.mdc)을 참조하세요.
+> **참고**: 전체 디렉토리 구조는 [directory-structure-rule](mdc:directory-structure-rule.mdc)을 참조하세요.
 
 ## 서버 응답 스키마
 서버는 일반적인 axios 응답 스키마를 따릅니다:
@@ -59,7 +54,7 @@ export interface Member {
 }
 ```
 
-> **참고**: 타입스크립트 활용에 관한 자세한 내용은 [typescript-usage-rule](./typescript-usage-rule.mdc)을 참조하세요.
+> **참고**: 타입스크립트 활용에 관한 자세한 내용은 [typescript-usage-rule](mdc:typescript-usage-rule.mdc)을 참조하세요.
 
 ### 3. 도메인별 응답 타입 정의
 ```typescript
@@ -101,7 +96,7 @@ export const getWorkbook = async (
 };
 ```
 
-> **참고**: API 함수 네이밍 방식은 [naming-convention-rule](./naming-convention-rule.mdc)을 참조하세요.
+> **참고**: API 함수 네이밍 방식은 [naming-convention-rule](mdc:naming-convention-rule.mdc)을 참조하세요.
 
 모든 API 함수는 index.ts에서 export하여 모듈 외부에서 쉽게 가져다 쓸 수 있게 합니다:
 
@@ -154,7 +149,7 @@ export const useGetWorkbook = ({
 };
 ```
 
-> **참고**: 커스텀 훅의 코딩 스타일은 [coding-convention-rule](./coding-convention-rule.mdc)을 참조하세요.
+> **참고**: 커스텀 훅의 코딩 스타일은 [coding-convention-rule](mdc:coding-convention-rule.mdc)을 참조하세요.
 
 ## 코드 분리 원칙
 - 도메인별 디렉토리 분리
@@ -178,7 +173,7 @@ const { data, isPending, isSuccess, isError } = useGetWorkbook({
 ## 관련 규칙
 API 페칭 구현 시 다음 규칙들을 함께 참조하세요:
 
-- **디렉토리 구조**: [directory-structure-rule](./directory-structure-rule.mdc) - 전체 프로젝트 구조 및 레이어 아키텍처
-- **네이밍 패턴**: [naming-convention-rule](./naming-convention-rule.mdc) - API 함수 및 타입 네이밍 규칙
-- **코딩 스타일**: [coding-convention-rule](./coding-convention-rule.mdc) - 일관된 API 구현 방식
-- **성능 최적화**: [performance-optimization-rule](./performance-optimization-rule.mdc) - 데이터 페칭 성능 최적화
+- **디렉토리 구조**: [directory-structure-rule](mdc:directory-structure-rule.mdc) - 전체 프로젝트 구조 및 레이어 아키텍처
+- **네이밍 패턴**: [naming-convention-rule](mdc:naming-convention-rule.mdc) - API 함수 및 타입 네이밍 규칙
+- **코딩 스타일**: [coding-convention-rule](mdc:coding-convention-rule.mdc) - 일관된 API 구현 방식
+- **성능 최적화**: [performance-optimization-rule](mdc:performance-optimization-rule.mdc) - 데이터 페칭 성능 최적화
