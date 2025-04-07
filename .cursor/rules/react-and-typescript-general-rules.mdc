@@ -16,7 +16,6 @@ alwaysApply: true
 - 컴포넌트를 작고 재사용 가능한 단위로 분리
 - 단일 책임 원칙(SRP) 준수
 - 상태 관리는 필요한 가장 낮은 레벨에서 수행
-- props drilling 방지를 위한 Context API 또는 상태 관리 라이브러리 활용
 
 ```tsx
 // 좋은 컴포넌트 예시
@@ -76,7 +75,7 @@ const Button: React.FC<ButtonProps> = ({
 
 ## 폼 및 사용자 입력 처리
 - 제어 컴포넌트 방식 선호
-- 폼 유효성 검사를 위한 라이브러리 활용 (react-hook-form, formik 등)
+- 폼 유효성 검사를 위한 라이브러리 활용 (react-hook-form 등)
 - 사용자 친화적인 에러 메시지 제공
 
 ## 성능 최적화
@@ -90,17 +89,12 @@ const Button: React.FC<ButtonProps> = ({
 - 키보드 네비게이션 지원
 - 색상 대비 고려
 
-## 테스트 및 품질 관리
-- 단위 테스트 및 통합 테스트 작성
-- 정적 타입 검사 및 린팅 활용
-- 코드 리뷰 과정 중시
-
 ## 관련 규칙
 React 및 TypeScript 개발 시 다음 규칙들을 함께 참조하세요:
 
-- **디렉토리 구조**: [directory-structure-rule](./directory-structure-rule.mdc) - 컴포넌트 및 파일 구조
-- **성능 최적화**: [performance-optimization-rule](./performance-optimization-rule.mdc) - React 성능 향상 기법
-- **TypeScript 활용**: [typescript-usage-rule](./typescript-usage-rule.mdc) - TypeScript 타입 시스템 활용
-- **코딩 스타일**: [coding-convention-rule](./coding-convention-rule.mdc) - 일관된 코딩 패턴
-- **네이밍 패턴**: [naming-convention-rule](./naming-convention-rule.mdc) - 컴포넌트 및 함수 네이밍
+- **디렉토리 구조**: [directory-structure-rule](mdc:directory-structure-rule.mdc) - 컴포넌트 및 파일 구조
+- **성능 최적화**: [performance-optimization-rule](mdc:performance-optimization-rule.mdc) - React 성능 향상 기법
+- **TypeScript 활용**: [typescript-usage-rule](mdc:typescript-usage-rule.mdc) - TypeScript 타입 시스템 활용
+- **코딩 스타일**: [coding-convention-rule](mdc:coding-convention-rule.mdc) - 일관된 코딩 패턴
+- **네이밍 패턴**: [naming-convention-rule](mdc:naming-convention-rule.mdc) - 컴포넌트 및 함수 네이밍
 

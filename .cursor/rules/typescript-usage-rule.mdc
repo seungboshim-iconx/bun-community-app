@@ -109,7 +109,7 @@ const Button: React.FC<ButtonProps> = ({
 ## 관련 규칙
 TypeScript 활용 시 다음 규칙들을 함께 참조하세요:
 
-- **디렉토리 구조**: [directory-structure-rule](./directory-structure-rule.mdc) - 타입 파일 구조
-- **API 구현**: [api-fetching-architecture-rule](./api-fetching-architecture-rule.mdc) - API 관련 타입 정의
-- **네이밍 패턴**: [naming-convention-rule](./naming-convention-rule.mdc) - 타입 네이밍 규칙
-- **코딩 스타일**: [coding-convention-rule](./coding-convention-rule.mdc) - 일관된 타입 사용
+- **디렉토리 구조**: [directory-structure-rule](mdc:directory-structure-rule.mdc) - 타입 파일 구조
+- **API 구현**: [api-fetching-architecture-rule](mdc:api-fetching-architecture-rule.mdc) - API 관련 타입 정의
+- **네이밍 패턴**: [naming-convention-rule](mdc:naming-convention-rule.mdc) - 타입 네이밍 규칙
+- **코딩 스타일**: [coding-convention-rule](mdc:coding-convention-rule.mdc) - 일관된 타입 사용
